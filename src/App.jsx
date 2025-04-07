@@ -1,8 +1,11 @@
 import Sidebar from "./components/Sidebar"
 import Right from "./components/Right"
+import Preloader from "./components/Preloader"
 
 function App() {
   return (
+    <>
+    <Preloader />
     <div className="flex ">
       <div className="w-1/5">
         <Sidebar />
@@ -11,6 +14,7 @@ function App() {
         <Right />
       </div>
     </div>
+    </>
   )
 }
 
