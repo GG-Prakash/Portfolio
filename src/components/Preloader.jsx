@@ -39,11 +39,9 @@ function GentleGG() {
 
       {/* Full Circle Background */}
       <circle cx="100" cy="100" r="100" fill="#0f172a" />
-
-      {/* Subtle Glow */}
       <circle cx="100" cy="100" r="100" fill="url(#glow)" />
 
-      {/* GG gentle handshake animation */}
+      {/* GG gentle fade-in */}
       <text
         x="100"
         y="115"
@@ -53,7 +51,7 @@ function GentleGG() {
         fill="#ffffff"
         fontFamily="'Poppins', sans-serif"
         fontWeight="600"
-        className="gg-gentle"
+        className="gg-fade"
       >
         GG
       </text>
@@ -105,13 +103,15 @@ function GentleGG() {
       ))}
 
       <style jsx>{`
-        @keyframes ggFloatIn {
-          0% { opacity: 0; transform: scale(0.6) translateY(-20px); }
-          50% { opacity: 1; transform: scale(1.05) translateY(10px); }
-          100% { transform: scale(1) translateY(0); }
+        .gg-fade {
+          opacity: 0;
+          animation: fadeIn 0.2s ease-out 0.5s forwards;
         }
-        .gg-gentle {
-          animation: ggFloatIn 2.6s ease-out forwards;
+
+        @keyframes fadeIn {
+          to {
+            opacity: 1;
+          }
         }
       `}</style>
     </svg>
