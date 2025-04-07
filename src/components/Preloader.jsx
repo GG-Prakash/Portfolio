@@ -7,7 +7,7 @@ export default function Preloader() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoaded(true);
-    }, 5000);
+    }, 2000);
     return () => clearTimeout(timeout);
   }, []);
 
