@@ -35,9 +35,9 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="w-full py-20 ">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-12">
+    <section id="experience" className="section title ">
+      <div className= " ">
+        <div className="text-left mb-12 ">
           <h2 className="text-4xl font-bold  mb-2">Professional Experience</h2>
           <p className="text-lg text-gray-400">
             Engineering student with AWS DevOps focus and strong interest in cloud technologies.

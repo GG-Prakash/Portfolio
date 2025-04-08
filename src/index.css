@@ -1,2 +1,20 @@
 @import "tailwindcss";
 
+.title{
+    @apply text-4xl font-bold text-gray-800 w-full mb-4;
+}
+.section{
+    @apply w-full  pb-10 px-4 bg-white scroll-mt-[100px];
+}
+.sectioneven{
+    @apply w-full pb-10 px-4 bg-white scroll-mt-[100px];
+}
+
+.clr{
+    @apply bg-blue-400;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: rgb(49, 190, 255);
+    text-underline-offset: 10px;
+}

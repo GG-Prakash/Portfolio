@@ -49,23 +49,23 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="Projects" className="w-full py-20 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
+    <section id="Projects" className="w-full py-10 ">
+      <div className=" mx-auto px-6 ">
+        <div className="text-left mb-12">
           <h2 className="text-4xl font-extrabold text-gray-800">Projects</h2>
           <p className="text-gray-500 mt-3 text-lg">A curated selection of recent work.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 h-150  sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((proj, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1 flex flex-col"
+              className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1 flex flex-col"
             >
               <img
                 src={proj.img}
                 alt={proj.title}
-                className="w-full h-52 object-cover"
+                className=""
               />
               <div className="p-6 flex flex-col justify-between flex-1">
                 <span className="inline-block px-3 py-1 text-xs font-medium bg-gray-100 text-indigo-600 rounded-full mb-2 w-fit">

@@ -2,18 +2,18 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 md:px-6 lg:px-5  ">
+    <section id="about" className="section pt-10">
       
       <div className="mb-14" >
-        <h2 className="text-4xl font-bold text-gray-800 w-full mb-4">About</h2>
-        <p className="text-lg text-black  w-full">
+        <h2 className="title">About</h2>
+        <p className="text-lg text-black  w-full pr-5">
           Passionate about building scalable cloud solutions, automation-driven workflows, and seamless user experiences. 
           With expertise in AWS, DevOps, and full-stack development, I create efficient, secure, and high-performing applications. 
           Always learning, innovating, and pushing boundaries in cloud technology.
         </p>
       </div>
 
-      <div className="bg-slate-100 p-6" >
+      <div className="bg-blue-100/50 p-6" >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
           <div className="w-full lg:w-3/14">
