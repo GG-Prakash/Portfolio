@@ -72,14 +72,14 @@ const Skills = () => {
 
           <div className="flex gap-4">
             <a 
-              href="/resume.pdf" 
-              download="Resume.pdf"
+              href="/Gnanaprakash_Resume.pdf" 
+              download="Gnanaprakash.pdf"
               className="px-2 py-3 bg-designColor text-black rounded-md hover:bg-gray-300 transition-colors duration-300"
             >
               Download Resume
             </a>
             <a 
-              href="/resume.pdf" 
+              href="/Gnanaprakash_Resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-2 py-3  text-designColor rounded-md hover:bg-gray-800 transition-colors duration-300"
