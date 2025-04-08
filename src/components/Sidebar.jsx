@@ -1,8 +1,5 @@
 import React from 'react'
-import { CgProfile } from 'react-icons/cg'
 import { FcAbout, FcContacts, FcDocument, FcHome, FcManager, FcWorkflow } from 'react-icons/fc'
-import { GrDocument, GrResume } from 'react-icons/gr'
-import { HiHome } from 'react-icons/hi'
 import { FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin } from 'react-icons/fa'
 
 const Sidebar = () => {
@@ -10,7 +7,7 @@ const Sidebar = () => {
     <>
       <section className='bg-[#040b14] text-white flex flex-col h-screen w-1/5 fixed left-0 top-0 p-6 transition-all duration-300'>
         <div className='flex flex-col items-center mb-8'>
-          <img 
+          <img
             className='rounded-full w-32 h-32 object-cover border-4 border-[#2c2f3f] mb-4 hover:border-[#149ddd] transition-all duration-300' 
             src='/Profile.jpg'
             alt='Profile'

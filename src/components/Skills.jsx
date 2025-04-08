@@ -48,8 +48,6 @@ const Skills = () => {
                 key={index}
                 className="flex flex-col items-center p-5 bg-gray-900/10 backdrop-blur-md rounded-lg border border-gray-600/30
                 shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1.5 hover:border-designColor/50"
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
               >
                 <div className=" mb-3">
                   {skill.icon}
