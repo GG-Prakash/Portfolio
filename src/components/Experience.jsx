@@ -50,7 +50,7 @@ const Experience = () => {
             return (
               <div
                 key={index}
-                className="bg-blue-950/20 rounded-2xl shadow-lg overflow-hidden transition-all duration-300"
+                className="bg-blue-100/60 rounded-2xl shadow-lg overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => toggleCard(index)}
@@ -70,7 +70,7 @@ const Experience = () => {
                       <p className="text-xs text-gray-600">{exp.duration}</p>
                     </div>
                   </div>
-                  <span className={`text-xl text-indigo-950 transform transition-transform ${isOpen ? "rotate-180" : ""}`}>
+                  <span className={`text-xl text-indigo-950  transform transition-transform ${isOpen ? "rotate-180" : ""}`}>
                     ▼
                   </span>
                 </button>
