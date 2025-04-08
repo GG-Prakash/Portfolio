@@ -6,6 +6,7 @@ import Experience from './Experience'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
+import Education from './Education'
 const Right = () => {
   return (
    <>
@@ -13,6 +14,7 @@ const Right = () => {
    <Hero />
    <About />
    <Skills />
+   <Education />
    <Experience />
    <Projects />
    <Contact />

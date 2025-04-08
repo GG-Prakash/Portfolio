@@ -21,7 +21,7 @@ const Hero = () => {
            animate={{ opacity: 1, y: 0 }}
            transition={{ delay: 0.2, duration: 0.8 }}>
         <h2 className="text-4xl md:text-6xl font-bold mb-4">GnanaPrakash</h2>
-        <p className="text-xl md:text-2xl">
+        <p className="text-xl md:text-2xl px-2">
           I'm{' '}
           <TypeAnimation
             sequence={[

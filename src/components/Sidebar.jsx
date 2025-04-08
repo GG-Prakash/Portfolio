@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FcAbout, FcContacts, FcDocument, FcHome, FcManager, FcWorkflow } from 'react-icons/fc'
 import { FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin } from 'react-icons/fa'
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
               <FaTwitter className="text-xl" />
             </a>
             <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaFacebook className="text-xl" />
+              <FaFacebook className="text-xl" /> 
             </a>
             <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
               <FaInstagram className="text-xl" />

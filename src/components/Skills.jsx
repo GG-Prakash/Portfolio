@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaAws, FaReact, FaNodeJs, FaDocker, FaGitAlt } from 'react-icons/fa'
+import { FaAws, FaReact, FaNodeJs, FaDocker,  FaGitAlt } from 'react-icons/fa'
 import { FcDocument } from 'react-icons/fc'
-import { SiTerraform, SiKubernetes, SiTailwindcss, SiTypescript, SiJenkins } from 'react-icons/si'
+import { SiTerraform, SiKubernetes, SiTailwindcss, SiTypescript, SiJenkins, SiAnsible } from 'react-icons/si'
 
 const Title = ({ title, des }) => {
   return (
@@ -21,7 +21,7 @@ const Skills = () => {
   const skills = [
     { icon: <FaAws size={40} />, name: 'AWS' },
     { icon: <FaReact size={40} />, name: 'React' },
-    { icon: <FaNodeJs size={40} />, name: 'Node.js' },
+    { icon: <SiAnsible size={40} />, name: 'Ansible' },,
     { icon: <FaDocker size={40} />, name: 'Docker' },
     { icon: <SiTerraform size={40} />, name: 'Terraform' },
     { icon: <SiKubernetes size={40} />, name: 'Kubernetes' },

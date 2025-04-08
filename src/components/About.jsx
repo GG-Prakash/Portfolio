@@ -2,34 +2,34 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 md:px-8 lg:px-16 bg-white ">
+    <section id="about" className="py-20 px-4 md:px-6 lg:px-5  ">
       
-      <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
-        <h2 className="text-4xl font-bold text-gray-800  mb-4">About</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+      <div className="mb-14" >
+        <h2 className="text-4xl font-bold text-gray-800 w-full mb-4">About</h2>
+        <p className="text-lg text-black  w-full">
           Passionate about building scalable cloud solutions, automation-driven workflows, and seamless user experiences. 
           With expertise in AWS, DevOps, and full-stack development, I create efficient, secure, and high-performing applications. 
           Always learning, innovating, and pushing boundaries in cloud technology.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      <div className="" >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
-          <div className="w-full lg:w-1/3">
+          <div className="w-full lg:w-3/14">
             <img 
               src="/Profile.jpg" 
-              className="rounded-xl shadow-xl w-full h-auto max-w-md mx-auto"
+              className="rounded-xl shadow-5xl shadow-black  h-auto"
               alt="Profile"
             />
           </div>
 
           
-          <div className="w-full lg:w-2/3">
-            <h2 className="text-3xl font-bold text-gray-800  mb-4">
+          <div className=" bg-white ">
+            <h2 className="text-2xl font-bold text-gray-800  mb-4">
               AWS Cloud & DevOps Engineer | Web Developer
             </h2>
-            <p className="italic text-gray-600 text-lg py-3 mb-6">
+            <p className="italic text-gray-600 text-lg py-2 mb-6">
               "Designing the Future, One Cloud at a Time."
             </p>
 
