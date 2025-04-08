@@ -13,7 +13,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="" >
+      <div className="bg-slate-100 p-6" >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
           <div className="w-full lg:w-3/14">
@@ -25,8 +25,8 @@ const About = () => {
           </div>
 
           
-          <div className=" bg-white ">
-            <h2 className="text-2xl font-bold text-gray-800  mb-4">
+          <div className="  mt-[-50px] ">
+            <h2 className="text-2xl font-bold  text-gray-800  mb-4">
               AWS Cloud & DevOps Engineer | Web Developer
             </h2>
             <p className="italic text-gray-600 text-lg py-2 mb-6">
