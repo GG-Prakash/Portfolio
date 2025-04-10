@@ -24,14 +24,14 @@ const Education = () => {
                     result="7.64" />
                 <EducationCard
                     title="HSC"
-                    des="Sri Kalaivani Vidyalaya Matriculation Higher Secondary School"
+                    des="Karaikudi Maharishi vidya mandir"
                     subTitle="(2019-21)"
-                    result="90.52%" />
+                    result="81.52%" />
                 <EducationCard
                     title="SSLC"
-                    des="Sri Kalaivani Vidyalaya Matriculation Higher Secondary School"
+                    des="C.V.CT.V Meenakshi Achi Matriculation School"
                     subTitle="(2017-19)"
-                    result="90.2%" />
+                    result="71.2%" />
             </div>
             </div>
             
