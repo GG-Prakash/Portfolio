@@ -30,7 +30,7 @@ const Sidebar = () => {
             <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
               <FaSkype className="text-xl" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
+            <a href="www.linkedin.com/in/gg-prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
               <FaLinkedin className="text-xl" />
             </a>
           </div>
