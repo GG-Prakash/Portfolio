@@ -13,7 +13,7 @@ const Card = ({ title, des, logo }) => {
                         <h2 className={`text-xl md:text-2xl font-titleFont font-bold text-black`}>
                             {title}
                         </h2>
-                        <p className={`base truncated text-black/80`}>
+                        <p className={`text-base truncated text-black/80`}>
                             {des}
                         </p>
                         <span className="text-2xl text-[#149ddd]">
