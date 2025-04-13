@@ -1,5 +1,4 @@
-import EducationCard from "./EducationCard"
-
+import EducationCard from "./EducationCard"  
 const Education = () => {
     return (
         <section
