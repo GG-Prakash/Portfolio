@@ -24,7 +24,7 @@ const Education = () => {
                     result="7.64" />
                 <EducationCard
                     title="HSC"
-                    des="Karaikudi Maharishi vidya mandir"
+                    des="Karaikudi Maharishi vidya mandir Higher Secondary School"
                     subTitle="(2019-21)"
                     result="81.52%" />
                 <EducationCard
