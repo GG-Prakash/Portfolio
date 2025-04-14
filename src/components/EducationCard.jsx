@@ -15,7 +15,7 @@ const EducationCard = ({ title, subTitle, result, des }) => {
                 <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-col">
                         <h3 className="text-xl md:text-[14px] xl:text-xl max-md:text-[12px] z-10 font-semibold leading-tight duration-300 text-gray-800 group-hover:text-gray-900">
-                            {title}
+                             {title}
                         </h3>
                         <p className="text-sm md:text-[11px] xl:text-sm max-md:text-[9px] mt-2 duration-300 text-gray-800 group-hover:text-gray-900">
                             {subTitle}

@@ -1,54 +1,67 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import ProjectsCard from './ProjectsCard';
 
 const projects = [
   {
-    title: 'App 1',
-    category: 'App',
-    img: '/apollo.png',
-    git: 'https://github.com/your-username/app1',
-    live: 'https://your-app1-demo.com',
+    title: 'Melody Photography',
+    des: 'A realtime react project to show photography works and to book the service.',
+    src: '/projects/melody.png',
+    projLink: 'https://melodyphotographyps.netlify.app/'
   },
   {
-    title: 'Product 1',
-    category: 'Product',
-    img: '/Profile.jpg',
-    git: 'https://github.com/your-username/product1',
-    live: 'https://your-product1-demo.com',
+    title: 'HR Desk',
+    des: 'A Final Year project for automating the HR process in a company. The project is built using React, Node.js, Express.js, and MongoDB.',
+    src: '/projects/finalyr.png',
+    projLink: 'https://melodyphotographyps.netlify.app/'
   },
   {
-    title: 'Branding 1',
-    category: 'Branding',
-    img: 'internpe.png',
-    git: 'https://github.com/your-username/branding1',
-    live: 'https://your-branding1-demo.com',
+    title: 'Ahmed Paint Traders Karaikudi',
+    des: 'A realtime react project to show up the Landing page for that business.',
+    src: '/projects/ahmed.png',
+    projLink: 'https://ahmedpainttraders.in/'
   },
   {
-    title: 'Books 1',
-    category: 'Books',
-    img: '/internpe.png',
-    git: 'https://github.com/your-username/books1',
-    live: 'https://your-books1-demo.com',
+    title: 'Natarajan and co - Ultratech Building solutions',
+    des: 'A realtime react project to show up the Landing page for that business.',
+    src: '/projects/nc.png',
+    projLink: 'https://natarajanandco.com/'
   },
   {
-    title: 'App 2',
-    category: 'App',
-    img: '/apollo.png',
-    git: 'https://github.com/your-username/app2',
-    live: 'https://your-app2-demo.com',
+    title: 'Shopping Site',
+    des: 'A sample front end shopping site with the help of React, Tailwind CSS.',
+    src: '/projects/shopsite.png',
+    projLink: 'https://p15-ecommerce-site-react-tailwind.netlify.app/',
+    gitLink: 'https://github.com/Kabileshwaran183/P15-Ecommerce-site'
   },
   {
-    title: 'Product 2',
-    category: 'Product',
-    img: '/Profile.jpg',
-    git: 'https://github.com/your-username/product2',
-    live: 'https://your-product2-demo.com',
-  },
-
+    title: 'Recipe App',
+    des: 'Get Recipes of your favourite food items by providing only the ingredients list. The Hugging Face API is used to get the recipes.',
+    src: '/projects/Recipeapp.png',
+    projLink: 'https://p5-recipe-app.netlify.app/',
+    gitLink: 'https://github.com/Kabileshwaran183/P5-Recipe-App'
+  }
 ];
 
 const Projects = () => {
   return (
+<<<<<<< HEAD
+    <section id="projects" className="w-full py-20 border-b-[1px] border-gray-200 scroll-mt-[100px]">
+      <div className="flex justify-center items-center text-center">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 mt-10">
+        {projects.map((project, index) => (
+          <ProjectsCard
+            key={index}
+            title={project.title}
+            des={project.des}
+            src={project.src}
+            projLink={project.projLink}
+            gitLink={project.gitLink}
+          />
+        ))}
+=======
     <section id="Projects" className="w-full py-10 ">
       <div className=" mx-auto px-6 ">
         <div className="text-left mb-12">
@@ -97,6 +110,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+>>>>>>> 25b30de19970fc443adb8ed5c2e4abe6aad30264
       </div>
     </section>
   );

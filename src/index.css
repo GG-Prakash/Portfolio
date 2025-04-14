@@ -18,3 +18,7 @@
     text-decoration-color: rgb(49, 190, 255);
     text-underline-offset: 10px;
 }
+
+.truncated {
+    @apply line-clamp-3;
+  }
