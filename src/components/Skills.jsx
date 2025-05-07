@@ -49,33 +49,39 @@ const Skills = () => {
 
         <div className="hidden md:block w-0.5 bg-gradient-to-b from-transparent via-gray-600/50 to-transparent mx-6"></div>
 
-        <div className="w-full md:w-2/6 bg-amber-200 items-start gap-8">
+        <div className="w-full md:w-2/6  items-start gap-8">
           <div>
             <h3 className="text-2xl font-semibold text-blue-950 pb-3 border-b border-gray-600/50">Professional Profile</h3>
             <div className="flex gap-4">
-            <div className="w-72 h-42 mt-7 bg-gray-900/20 rounded-xl border border-gray-600/30 shadow-md">
-              <FcDocument className='w-72 h-42' />
-            </div>
 
-            <div className='bg-amber-800'>
-              <span><a
-                href="/Gnanaprakash_Resume.pdf"
-                download="Gnanaprakash.pdf"
-                className="px-3 py-3  text-black rounded-md hover:bg-blue-400 transition-colors duration-300"
-              >
-                Download Resume
-              </a>
-              </span>
-              
-              <span><a
-                href="/Gnanaprakash_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-2 py-3  text-designColor rounded-md hover:bg-blue-400 transition-colors duration-300"
-              >
-                View Resume
-              </a></span>
+              <div className="w-72 h-42 mt-7 bg-gray-900/20 rounded-xl border border-gray-600/30 shadow-md">
+                <FcDocument className='w-72 h-42' />
               </div>
+
+
+
+
+              <div className="mt-7 flex flex-col space-y-2">
+                <a
+                  href="/Gnanaprakash_Resume.pdf"
+                  download="Gnanaprakash.pdf"
+                  className="whitespace-nowrap px-2 py-3 text-l text-black rounded-md hover:bg-blue-400 transition-colors duration-300"
+                >
+                  Download Resume
+                </a>
+
+                <a
+                  href="/Gnanaprakash_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap px-2 py-3 text-l text-designColor rounded-md hover:bg-blue-400 transition-colors duration-300"
+                >
+                  View Resume
+                </a>
+              </div>
+
+
+
             </div>
           </div>
 
