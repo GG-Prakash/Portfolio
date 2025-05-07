@@ -13,7 +13,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="bg-blue-100/50 p-6" >
+      <div className="bg-blue-100/50 rounded-xl p-6" >
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
           <div className="w-full lg:w-3/14">

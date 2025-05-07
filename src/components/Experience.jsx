@@ -34,8 +34,8 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="section title">
-      <div>
+    <section id="experience" className="section title  ">
+      <div className=" bg-blue-100/50 py-5 px-5 rounded-xl">
         <div className="text-left mb-12">
           <h2 className="text-4xl font-bold mb-2">Professional Experience</h2>
           <p className="text-lg text-gray-400">
@@ -44,7 +44,7 @@ const Experience = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 mt-10">
+        <div className="grid xl:grid-cols-3 xl:gap-10 mt-5">
           <Card
             title="Intranet Application Developer"
             des="Developed a dynamic intranet website for Apollo Hospitals, implementing an advanced admin panel for unit management, editable URLs, and seamless data handling, enhancing operational efficiency. Technology used: Python (Flask), HTML, CSS, JavaScript"
@@ -55,6 +55,12 @@ const Experience = () => {
             des="Designed and implemented responsive UI/UX with HTML5, CSS3, and JavaScript. Optimized cross-platform performance for web apps across varying screen dimensions."
             logo="/internpe.png"
           />
+          <Card
+            title="Client-Side Developer"
+            des="Designed and implemented responsive UI/UX with HTML5, CSS3, and JavaScript. Optimized cross-platform performance for web apps across varying screen dimensions."
+            logo="/internpe.png"
+          />
+          
         </div>
       </div>
     </section>

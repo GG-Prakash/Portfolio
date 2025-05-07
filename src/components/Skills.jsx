@@ -65,7 +65,7 @@ const Skills = () => {
                 <a
                   href="/Gnanaprakash_Resume.pdf"
                   download="Gnanaprakash.pdf"
-                  className="whitespace-nowrap px-2 py-3 text-l text-black rounded-md hover:bg-blue-400 transition-colors duration-300"
+                  className="whitespace-nowrap px-2 py-3 text-l text-black rounded-md hover:bg-blue-300 transition-colors duration-300"
                 >
                   Download Resume
                 </a>
@@ -74,7 +74,7 @@ const Skills = () => {
                   href="/Gnanaprakash_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="whitespace-nowrap px-2 py-3 text-l text-designColor rounded-md hover:bg-blue-400 transition-colors duration-300"
+                  className="whitespace-nowrap px-2 py-3 text-l text-designColor rounded-md hover:bg-blue-300 transition-colors duration-300"
                 >
                   View Resume
                 </a>
