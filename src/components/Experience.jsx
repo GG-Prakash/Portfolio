@@ -50,7 +50,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="section title  ">
-      <div className=" bg-blue-100/50 py-5 px-5 rounded-xl">
+      <div className="  py-5 px-5 rounded-xl">
         <div className="text-left mb-12">
           <h2 className="text-4xl font-bold mb-2">Professional Experience</h2>
           <p className="text-lg text-gray-400">
