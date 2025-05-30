@@ -17,6 +17,7 @@ const Experience = () => {
         "Streamlined internal operations through scalable Flask APIs and modular architecture.",
       ],
     },
+    
     {
       logo: "/internpe.png",
       company: "InternPE (Remote)",
@@ -27,6 +28,20 @@ const Experience = () => {
         "Optimized cross-platform performance for web apps across varying screen dimensions.",
       ],
     },
+
+    {
+      logo: "/plus 91.jpeg",
+      company: "PLUS 91 Ultimate Cinemas",
+      role: "Digital Marketing",
+      duration: "Augest 2023 - September 2023 ",
+      points: [
+        "Collaborated with clients and colleagues to develop and execute a social media campaign.",
+        "Supported event planning and promotional activities.contributing to a 20% boost in attendance and sales inquiries.",
+        "Conducted keyword analysis and SEO optimization, significantly improving organic search rankings.",
+      ],
+    },
+    
+    
   ];
 
   const toggleCard = (index) => {
@@ -56,9 +71,9 @@ const Experience = () => {
             logo="/internpe.png"
           />
           <Card
-            title="Client-Side Developer"
-            des="Designed and implemented responsive UI/UX with HTML5, CSS3, and JavaScript. Optimized cross-platform performance for web apps across varying screen dimensions."
-            logo="/internpe.png"
+            title="Digital Marketing"
+            des="Assisted in various digital marketing initiatives, gaining proficiency with tools and analytics to measure campaign effectiveness."
+            logo="/plus 91.jpeg"
           />
           
         </div>

@@ -1,6 +1,7 @@
 
 import { FcAbout, FcContacts, FcDocument, FcHome, FcManager, FcWorkflow } from 'react-icons/fc'
 import { FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin } from 'react-icons/fa'
+import { BsGithub } from 'react-icons/bs'
 
 const Sidebar = () => {
   return (
@@ -18,8 +19,8 @@ const Sidebar = () => {
           </a>
 
           <div className="flex justify-center gap-4 mt-4">
-            <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaTwitter className="text-xl" />
+            <a href="https://github.com/GG-Prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
+              <BsGithub className="text-xl" />
             </a>
             <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
               <FaFacebook className="text-xl" /> 
@@ -62,7 +63,7 @@ const Sidebar = () => {
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
               >
                 <FcDocument className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Skills/</span>
+                <span>Skills</span>
               </a>
             </li>
             <li>
