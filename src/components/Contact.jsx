@@ -1,7 +1,76 @@
-import React from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import React, { useState, useRef } from 'react';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef(null);
+
+  const [from_name, setFromName] = useState('');
+  const [from_email, setFromEmail] = useState('');
+  const [phone_number, setPhoneNumber] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [errMsg, setErrMsg] = useState('');
+  const [successMsg, setSuccessMsg] = useState('');
+
+  const emailValidation = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  };
+
+  const handleSend = (e) => {
+    e.preventDefault();
+    setErrMsg('');
+    setSuccessMsg('');
+
+    if (from_name.trim() === '') {
+      setErrMsg('Name is required!');
+      return;
+    }
+    if (phone_number.trim() === '') {
+      setErrMsg('Phone number is required!');
+      return;
+    }
+    if (from_email.trim() === '') {
+      setErrMsg('Email is required!');
+      return;
+    }
+    if (!emailValidation(from_email)) {
+      setErrMsg('Enter a valid email!');
+      return;
+    }
+    if (subject.trim() === '') {
+      setErrMsg('Subject is required!');
+      return;
+    }
+    if (message.trim() === '') {
+      setErrMsg('Message is required!');
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setSuccessMsg(`Thank you ${from_name}, your message has been sent successfully!`);
+          setFromName('');
+          setPhoneNumber('');
+          setFromEmail('');
+          setSubject('');
+          setMessage('');
+        },
+        (error) => {
+          setErrMsg('Failed to send message. Please try again!');
+        }
+      );
+  };
+
   return (
     <section id="contact" className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6">
@@ -17,12 +86,10 @@ const Contact = () => {
           {/* Left Side - Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <FaLinkedin className="text-indigo-600 text-2xl flex-shrink-0" />
+              <FaMapMarkerAlt className="text-indigo-600 text-2xl flex-shrink-0" />
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/gg-prakash" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">
-                  https://www.linkedin.com/in/gg-prakash
-                </a>
+                <h4 className="text-lg font-semibold text-gray-800">Address</h4>
+                <p className="text-gray-600">A108 Adam Street, New York, NY 535022</p>
               </div>
             </div>
 
@@ -53,32 +120,61 @@ const Contact = () => {
 
           {/* Right Side - Form */}
           <div>
-            <form className="space-y-6 bg-white p-8 shadow-xl rounded-2xl">
+            <form
+              ref={formRef}
+              onSubmit={handleSend}
+              className="space-y-6 bg-white p-8 shadow-xl rounded-2xl"
+            >
+              {errMsg && (
+                <p className="text-center text-red-600 font-semibold">{errMsg}</p>
+              )}
+              {successMsg && (
+                <p className="text-center text-green-600 font-semibold">{successMsg}</p>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="from_name" className="block text-sm font-medium text-gray-700">
                     Your Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="from_name"
+                    name="from_name"
+                    value={from_name}
+                    onChange={(e) => setFromName(e.target.value)}
                     required
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                    Your Email
+                  <label htmlFor="phone_number" className="block text-sm font-medium text-gray-700">
+                    Phone Number
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    value={phone_number}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                     required
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
                   />
                 </div>
+              </div>
+
+              <div>
+                <label htmlFor="from_email" className="block text-sm font-medium text-gray-700">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="from_email"
+                  name="from_email"
+                  value={from_email}
+                  onChange={(e) => setFromEmail(e.target.value)}
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
               </div>
 
               <div>
@@ -89,6 +185,8 @@ const Contact = () => {
                   type="text"
                   id="subject"
                   name="subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   required
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
                 />
@@ -102,6 +200,8 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows="6"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                   className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:ring-indigo-500 focus:border-indigo-500"
                 ></textarea>
