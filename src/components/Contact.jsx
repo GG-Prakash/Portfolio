@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -17,10 +17,12 @@ const Contact = () => {
           {/* Left Side - Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <FaMapMarkerAlt className="text-indigo-600 text-2xl flex-shrink-0" />
+              <FaLinkedin className="text-indigo-600 text-2xl flex-shrink-0" />
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Address</h4>
-                <p className="text-gray-600">A108 Adam Street, New York, NY 535022</p>
+                <h4 className="text-lg font-semibold text-gray-800">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/gg-prakash" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">
+                  https://www.linkedin.com/in/gg-prakash
+                </a>
               </div>
             </div>
 
