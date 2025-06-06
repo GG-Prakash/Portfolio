@@ -19,25 +19,26 @@ const Hero = () => {
       <div className="bg-transparent ml-3 px-4" 
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
-           transition={{ delay: 0.2, duration: 0.8 }}>
-        <h2 className="text-4xl md:text-6xl font-bold mb-4">GnanaPrakash</h2>
-        <p className="text-xl md:text-2xl px-2 ">
-          I'm{' '}
+           transition={{ delay: 0.2, duration: 0.5 }}>
+        <h3 className='text-2xl md:text-3xl px-2'>Hi, i'm</h3>
+        <h2 className="text-4xl md:text-6xl text-cyan-400 font-bold mb-4">Gnana Prakash G</h2>
+        <p className="text-2xl md:text-3xl px-2 ">
+          a{' '}
           <TypeAnimation
             sequence={[
-              'Designer',
+              'AWS Cloud Enthusiast',
               2000,
-              'Developer',
+              'CI/CD Pipeline Builder',
               2000, 
-              'Freelancer',
+              'DevOps Automation Specialist',
               2000,
-              'Photographer',
+              'Freelancer Architect',
               2000
             ]}
             wrapper="span"
             cursor={true}
             repeat={Infinity}
-            className="underline"
+            
           />
         </p>
       </div>
