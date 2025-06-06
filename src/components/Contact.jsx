@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -78,44 +78,78 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact</h2>
           <p className="text-gray-500 text-lg">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            Get in Touch — I’m Just a Message Away
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side - Contact Info */}
           <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <FaMapMarkerAlt className="text-indigo-600 text-2xl flex-shrink-0" />
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">Address</h4>
-                <p className="text-gray-600">A108 Adam Street, New York, NY 535022</p>
-              </div>
+            {/* Removed address, call us, email sections as per user request */}
+
+            <div className="grid grid-cols-2 items-center justify-center pt-10 gap-8">
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:text-indigo-800"
+                aria-label="GitHub"
+              >
+                <div className="bg-indigo-100 p-6 rounded-lg flex items-center justify-center w-16 h-16">
+                  <FaGithub className="text-3xl text-indigo-600" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-semibold text-black">GitHub</span>
+                  <span className="text-sm text-gray-500">Connect on GitHub</span>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:text-indigo-800"
+                aria-label="Twitter"
+              >
+                <div className="bg-indigo-100 p-6 rounded-lg flex items-center justify-center w-16 h-16">
+                  <FaTwitter className="text-3xl text-indigo-600" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-semibold text-black">Twitter</span>
+                  <span className="text-sm text-gray-500">Follow on Twitter</span>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:text-indigo-800"
+                aria-label="LinkedIn"
+              >
+                <div className="bg-indigo-100 p-6 rounded-lg flex items-center justify-center w-16 h-16">
+                  <FaLinkedin className="text-3xl text-indigo-600" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-semibold text-black">LinkedIn</span>
+                  <span className="text-sm text-gray-500">Connect on LinkedIn</span>
+                </div>
+              </a>
+              <a
+                href="https://instagram.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:text-indigo-800"
+                aria-label="Instagram"
+              >
+                <div className="bg-indigo-100 p-6 rounded-lg flex items-center justify-center w-16 h-16">
+                  <FaInstagram className="text-3xl text-indigo-600" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-semibold text-black">Instagram</span>
+                  <span className="text-sm text-gray-500">Follow on Instagram</span>
+                </div>
+              </a>
             </div>
 
-            <div className="flex items-start gap-4">
-              <FaPhoneAlt className="text-indigo-600 text-2xl flex-shrink-0" />
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">Call Us</h4>
-                <p className="text-gray-600">+1 5589 55488 55</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <FaEnvelope className="text-indigo-600 text-2xl flex-shrink-0" />
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">Email Us</h4>
-                <p className="text-gray-600">info@example.com</p>
-              </div>
-            </div>
-
-            <iframe
-              className="w-full h-64 rounded-lg border"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
 
           {/* Right Side - Form */}
