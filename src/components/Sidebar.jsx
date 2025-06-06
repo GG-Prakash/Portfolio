@@ -14,7 +14,7 @@ const Sidebar = () => {
             alt='Profile'
           />
           <a href="#" className="text-center">
-            <h1 className="font-bold text-2xl mb-1">GnanaPrakash</h1>
+            <h1 className="font-bold text-2xl mb-1">Gnana Prakash G</h1>
             <p className="text-gray-400 text-sm">Cloud Engineer</p>
           </a>
 
