@@ -26,7 +26,7 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink }) => {
                 rel="noopener noreferrer"
                 title="GitHub Repository"
               >
-                <span className="text-lg w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-blue-500 transition-all duration-300 bg-gray-100 text-gray-800">
+                <span className="text-lg w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-blue-400 transition-all duration-300 bg-gray-100 text-blue-800">
                   <BsGithub />
                 </span>
               </a>
@@ -38,7 +38,7 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink }) => {
                 rel="noopener noreferrer"
                 title="Live Demo"
               >
-                <span className="text-lg w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-[#149ddd] transition-all duration-300 bg-blue-500 text-white">
+                <span className="text-lg w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-blue-400 transition-all duration-300 bg-gray-100 text-blue-800">
                   <FaGlobe />
                 </span>
               </a>

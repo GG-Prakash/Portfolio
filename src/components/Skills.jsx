@@ -6,16 +6,16 @@ import { SiTerraform, SiKubernetes, SiTailwindcss, SiTypescript, SiJenkins, SiAn
 
 const Skills = () => {
   const skills = [
-    { icon: <FaAws size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <FaReact size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiAnsible size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <FaDocker size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiTerraform size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiKubernetes size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiTailwindcss size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiTypescript size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <FaGitAlt size={35} className='group-hover:text-blue-400 text-blue-900' />, },
-    { icon: <SiJenkins size={35} className='group-hover:text-blue-400 text-blue-900' />, }
+    { icon: <FaAws size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <FaReact size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiAnsible size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <FaDocker size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiTerraform size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiKubernetes size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiTailwindcss size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiTypescript size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <FaGitAlt size={35} className='group-hover:text-blue-400 text-indigo-600' />, },
+    { icon: <SiJenkins size={35} className='group-hover:text-blue-400 text-indigo-600' />, }
   ]
 
   return (
@@ -33,8 +33,8 @@ const Skills = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center py-3 bg-white backdrop-blur-md rounded-lg border-blur
-                shadow-blue-400  hover:shadow-lg transition-all group duration-300 ease-in-out transform hover:-translate-y-1.5 hover:border-designColor/50"
+                className="flex flex-col items-center py-3 bg-white  rounded-lg 
+               backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400"
               >
                 <div className=" mb-3">
                   {skill.icon}
@@ -59,13 +59,12 @@ const Skills = () => {
               </div>
 
 
-
-
-              <div className="mt-7 flex flex-col space-y-2">
+              <div className='flex flex-col justify-center'>
+                <div className="mt-7 flex flex-col items-center space-y-6 ">
                 <a
                   href="/Gnanaprakash_Resume.pdf"
                   download="Gnanaprakash.pdf"
-                  className="whitespace-nowrap px-2 py-3 text-l text-black rounded-md hover:bg-blue-300 transition-colors duration-300"
+                  className="whitespace-nowrap px-2 py-3 text-l  text-indigo-600 rounded-md text-center backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-full h-min transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 hover:text-blue-400"
                 >
                   Download Resume
                 </a>
@@ -74,11 +73,14 @@ const Skills = () => {
                   href="/Gnanaprakash_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="whitespace-nowrap px-2 py-3 text-l text-designColor rounded-md hover:bg-blue-300 transition-colors duration-300"
+                  className="whitespace-nowrap px-2 py-3 text-l text-indigo-600 text-center rounded-md backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-full h-min transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 hover:text-blue-400"
                 >
                   View Resume
                 </a>
               </div>
+              </div>
+
+              
 
 
 

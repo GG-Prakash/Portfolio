@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 body{
     font-family: "Bodoni Moda", serif;
 }
@@ -23,12 +22,30 @@ body{
     text-underline-offset: 10px;
 }
 
-.border-blur {
-    position: relative;
-    border-bottom: 1px solid rgba(193, 225, 244, 0.649); /* Tailwind gray-400 with opacity */
-    
-}
-
 .truncated {
     @apply line-clamp-3;
-  }
+}
+
+/* Custom bottom-only shadow */
+.shadow-bottom {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom blurred border */
+.border-blur {
+    position: relative;
+    border: 1px solid rgba(156, 163, 175, 0.5); /* Tailwind gray-400 with opacity */
+}
+
+.border-blur::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    box-shadow: 0 0 8px 4px rgba(156, 163, 175, 0.4);
+    filter: blur(4px);
+    z-index: -1;
+}
