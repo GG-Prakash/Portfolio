@@ -89,7 +89,7 @@ const Contact = () => {
 
             <div className="grid grid-cols-2 items-center justify-center pt-10 gap-8">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/GG-Prakash"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 hover:text-indigo-800"
@@ -119,7 +119,7 @@ const Contact = () => {
                 </div>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="www.linkedin.com/in/gg-prakash"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 hover:text-indigo-800"

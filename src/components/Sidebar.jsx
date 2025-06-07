@@ -15,7 +15,7 @@ const Sidebar = () => {
           />
           <a href="#" className="text-center">
             <h1 className="font-bold text-2xl mb-1">Gnana Prakash G</h1>
-            <p className="text-gray-400 text-sm">Cloud Engineer</p>
+            <p className="text-gray-400 text-sm">Code & Cloud</p>
           </a>
 
           <div className="flex justify-center gap-4 mt-4">

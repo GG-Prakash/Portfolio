@@ -41,7 +41,9 @@ const Hero = () => {
             
           />
         </p>
+       
       </div>
+       
     </section>
   )
 }

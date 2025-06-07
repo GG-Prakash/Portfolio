@@ -6,11 +6,10 @@ const About = () => {
       
       <div className="mb-14" >
         <h2 className="title">About</h2>
-        <p className="text-lg text-black  w-full pr-5">
-          Passionate about building scalable cloud solutions, automation-driven workflows, and seamless user experiences. 
-          With expertise in AWS, DevOps, and full-stack development, I create efficient, secure, and high-performing applications. 
-          Always learning, innovating, and pushing boundaries in cloud technology.
-        </p>
+        <p className="text-xl text-black  w-full pr-5">
+         I specialize in AWS DevOps, cloud computing, and automation, building reliable and scalable infrastructure with a focus on efficiency. As a fresher, I’m driven to deliver seamless CI/CD pipelines and cloud solutions.
+
+In addition, I bring skills in web development to complement my DevOps expertise, enabling me to contribute end-to-end to projects. I’m passionate about continuous learning and tackling real-world challenges.</p>
       </div>
 
       <div className="bg-blue-100/50 rounded-xl p-6" >

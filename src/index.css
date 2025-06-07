@@ -23,6 +23,12 @@ body{
     text-underline-offset: 10px;
 }
 
+.border-blur {
+    position: relative;
+    border-bottom: 1px solid rgba(193, 225, 244, 0.649); /* Tailwind gray-400 with opacity */
+    
+}
+
 .truncated {
     @apply line-clamp-3;
   }

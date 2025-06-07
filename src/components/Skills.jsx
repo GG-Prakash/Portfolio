@@ -6,16 +6,16 @@ import { SiTerraform, SiKubernetes, SiTailwindcss, SiTypescript, SiJenkins, SiAn
 
 const Skills = () => {
   const skills = [
-    { icon: <FaAws size={35} className='group-hover:text-blue-400' />, },
-    { icon: <FaReact size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiAnsible size={35} className='group-hover:text-blue-400' />, },
-    { icon: <FaDocker size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiTerraform size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiKubernetes size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiTailwindcss size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiTypescript size={35} className='group-hover:text-blue-400' />, },
-    { icon: <FaGitAlt size={35} className='group-hover:text-blue-400' />, },
-    { icon: <SiJenkins size={35} className='group-hover:text-blue-400' />, }
+    { icon: <FaAws size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <FaReact size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiAnsible size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <FaDocker size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiTerraform size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiKubernetes size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiTailwindcss size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiTypescript size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <FaGitAlt size={35} className='group-hover:text-blue-400 text-blue-900' />, },
+    { icon: <SiJenkins size={35} className='group-hover:text-blue-400 text-blue-900' />, }
   ]
 
   return (
@@ -33,8 +33,8 @@ const Skills = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center py-3 bg-gray-900/10 backdrop-blur-md rounded-lg border border-gray-600/30
-                shadow-md hover:shadow-lg transition-all group duration-300 ease-in-out transform hover:-translate-y-1.5 hover:border-designColor/50"
+                className="flex flex-col items-center py-3 bg-white backdrop-blur-md rounded-lg border-blur
+                shadow-blue-400  hover:shadow-lg transition-all group duration-300 ease-in-out transform hover:-translate-y-1.5 hover:border-designColor/50"
               >
                 <div className=" mb-3">
                   {skill.icon}
