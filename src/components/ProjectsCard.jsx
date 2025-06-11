@@ -2,7 +2,7 @@ import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { FaGlobe } from 'react-icons/fa';
 
-const ProjectsCard = ({ title, des, src, projLink, gitLink }) => {
+const ProjectsCard = ({ title, des, src, projLink, gitLink, tools }) => {
   return (
     <div className="w-full p-4 xl:px-6 h-auto xl:py-8 rounded-xl flex flex-col bg-gray-100 shadow-md hover:shadow-lg transition-all duration-300">
       <div className="w-full h-[200px] overflow-hidden rounded-lg group">
@@ -49,6 +49,19 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink }) => {
         <p className="text-sm tracking-wide leading-relaxed text-gray-600 hover:text-gray-800 transition-colors duration-300">
           {des}
         </p>
+
+        {tools && tools.length > 0 && (
+          <div className="project-tech flex flex-wrap gap-2 mt-2">
+            {tools.map((tool, index) => (
+              <span
+                key={index}
+                className="bg-indigo-600 text-white text-xs font-semibold px-2 py-1 rounded"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

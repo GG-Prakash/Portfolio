@@ -6,39 +6,45 @@ const projects = [
     title: 'Melody Photography',
     des: 'A realtime react project to show photography works and to book the service.',
     src: '/projects/melody.png',
-    projLink: 'https://melodyphotographyps.netlify.app/'
+    projLink: 'https://melodyphotographyps.netlify.app/',
+    tools: ['React', 'Tailwind CSS', 'Netlify']
   },
   {
     title: 'HR Desk',
     des: 'A Final Year project for automating the HR process in a company. The project is built using React, Node.js, Express.js, and MongoDB.',
     src: '/projects/finalyr.png',
-    projLink: 'https://melodyphotographyps.netlify.app/'
+    projLink: 'https://melodyphotographyps.netlify.app/',
+    tools: ['React', 'Node.js', 'Express', 'MongoDB']
   },
   {
     title: 'Ahmed Paint Traders Karaikudi',
     des: 'A realtime react project to show up the Landing page for that business.',
     src: '/projects/ahmed.png',
-    projLink: 'https://ahmedpainttraders.in/'
+    projLink: 'https://ahmedpainttraders.in/',
+    tools: ['React', 'CSS', 'Responsive Design']
   },
   {
     title: 'Natarajan and co - Ultratech Building solutions',
     des: 'A realtime react project to show up the Landing page for that business.',
     src: '/projects/nc.png',
-    projLink: 'https://natarajanandco.com/'
+    projLink: 'https://natarajanandco.com/',
+    tools: ['React', 'Tailwind CSS', 'SEO']
   },
   {
     title: 'Shopping Site',
     des: 'A sample front end shopping site with the help of React, Tailwind CSS.',
     src: '/projects/shopsite.png',
     projLink: 'https://p15-ecommerce-site-react-tailwind.netlify.app/',
-    gitLink: 'https://github.com/Kabileshwaran183/P15-Ecommerce-site'
+    gitLink: 'https://github.com/Kabileshwaran183/P15-Ecommerce-site',
+    tools: ['React', 'Tailwind CSS', 'E-commerce']
   },
   {
     title: 'Recipe App',
     des: 'Get Recipes of your favourite food items by providing only the ingredients list. The Hugging Face API is used to get the recipes.',
     src: '/projects/Recipeapp.png',
     projLink: 'https://p5-recipe-app.netlify.app/',
-    gitLink: 'https://github.com/Kabileshwaran183/P5-Recipe-App'
+    gitLink: 'https://github.com/Kabileshwaran183/P5-Recipe-App',
+    tools: ['React', 'API Integration', 'Food Recipes']
   }
 ];
 
@@ -59,6 +65,7 @@ const Projects = () => {
             src={project.src}
             projLink={project.projLink}
             gitLink={project.gitLink}
+            tools={project.tools}
           />
         ))}
 

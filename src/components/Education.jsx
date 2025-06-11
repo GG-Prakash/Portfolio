@@ -5,7 +5,7 @@ const Education = () => {
         id="education"
         className="w-full sectioneven   scroll-mt-[100px] mb-10 "
     >
-        <div className="max-md:px-4 md:px-7 xl:px-2 -mt-20 ">
+        <div className="max-md:px-4 md:px-7 xl:px-2  ">
             <div className="py-5 md:py-9 font-titleFont flex flex-col gap-2 ">
                 <p className="text-sm tracking-[4px]">2019-2021</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Education</h2>

@@ -1,7 +1,6 @@
 import React from 'react'
-import Hero from './Hero'
+import Hero from './Hero/Hero'
 import About from './About'
-import Skills from './Skills'
 import Experience from './Experience'
 import Projects from './Projects'
 import Contact from './Contact'
@@ -13,7 +12,6 @@ const Right = () => {
    <section>
    <Hero />
    <About />
-   <Skills />
    <Education />
    <Experience />
    <Projects />

@@ -95,7 +95,7 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="GitHub"
               >
-                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg w-16 h-16  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaGithub className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
@@ -110,7 +110,7 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="Twitter"
               >
-                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg w-16 h-16  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaTwitter className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
