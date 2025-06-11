@@ -49,17 +49,17 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="section title  ">
+    <section id="experience" className=" bg-blue-100/30 title py-10 ">
       <div className="  py-5 px-5 rounded-xl">
-        <div className="text-left mb-12">
+        <div className="  text-center  mb-12">
           <h2 className="text-4xl font-bold mb-2">Professional Experience</h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg  text-gray-400">
             Engineering student with AWS DevOps focus and strong interest in cloud technologies.
           </p>
         </div>
 
         {/* Cards Section */}
-        <div className="grid xl:grid-cols-3 xl:gap-10 mt-5">
+        <div className="grid  xl:grid-cols-3 xl:gap-10 mt-5">
           <Card
             title="Intranet Application Developer"
             des="Developed a dynamic intranet website for Apollo Hospitals, implementing an advanced admin panel for unit management, editable URLs, and seamless data handling, enhancing operational efficiency. Technology used: Python (Flask), HTML, CSS, JavaScript"
