@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import Sidebar from "./components/Sidebar";
 import Right from "./components/Right";
 import Preloader from "./components/Preloader";
-import SidebarSmall from "./components/SidebarSmall";
 import { FaBars } from "react-icons/fa";
 
 function App() {
@@ -31,25 +30,20 @@ function App() {
     }
     if (isSidebarOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isSidebarOpen]);
 
-  if (loading) {
-    return <Preloader />;
-  }
+  if (loading) return <Preloader />;
 
   return (
     <div className="flex">
-      <div className="w-1/5 max-lg:hidden">
-        <Sidebar />
-      </div>
+      {/* Sidebar for large screens */}
+      <Sidebar />
 
-      {/* Hamburger icon button fixed at top left corner, visible only on small screens */}
+      {/* Hamburger icon for small screens */}
       <button
         ref={buttonRef}
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -59,14 +53,15 @@ function App() {
         <FaBars size={24} />
       </button>
 
-      {/* Conditionally render SidebarSmall only if isSidebarOpen is true */}
+      {/* Sidebar for small screens (overlay) */}
       {isSidebarOpen && (
-        <div ref={sidebarRef} className="fixed top-0 left-0 z-40">
-          <SidebarSmall onCloseSidebar={() => setIsSidebarOpen(false)} />
+        <div ref={sidebarRef}>
+          <Sidebar isMobile onCloseSidebar={() => setIsSidebarOpen(false)} />
         </div>
       )}
 
-      <div className="w-4/5">
+      {/* Right section */}
+      <div className="w-full lg:ml-[20%]">
         <Right />
       </div>
     </div>

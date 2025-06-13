@@ -1,102 +1,83 @@
+// Sidebar.jsx
+import {
+  FcAbout, FcContacts, FcDocument, FcHome, FcManager, FcWorkflow
+} from 'react-icons/fc';
+import {
+  FaFacebook, FaInstagram, FaSkype, FaLinkedin
+} from 'react-icons/fa';
+import { BsGithub } from 'react-icons/bs';
 
-import { FcAbout, FcContacts, FcDocument, FcHome, FcManager, FcWorkflow } from 'react-icons/fc'
-import { FaTwitter, FaFacebook, FaInstagram, FaSkype, FaLinkedin } from 'react-icons/fa'
-import { BsGithub } from 'react-icons/bs'
+const Sidebar = ({ isMobile = false, onCloseSidebar = () => {} }) => {
+  const commonLinkClass =
+    "flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group";
 
-const Sidebar = () => {
+  const navLinks = [
+    { href: "#hero", icon: <FcHome className="text-xl text-gray-400 group-hover:text-[#149ddd]" />, text: "Home" },
+    { href: "#about", icon: <FcAbout className="text-xl" />, text: "About" },
+    { href: "#education", icon: <FcDocument className="text-xl text-gray-400 group-hover:text-[#149ddd]" />, text: "Education" },
+    { href: "#experience", icon: <FcWorkflow className="text-xl text-gray-400 group-hover:text-[#149ddd]" />, text: "Experience" },
+    { href: "#projects", icon: <FcManager className="text-xl text-gray-400 group-hover:text-[#149ddd]" />, text: "Projects" },
+    { href: "#contact", icon: <FcContacts className="text-xl" />, text: "Contact" },
+  ];
+
   return (
-    <>
-      <section className='bg-[#040b14] text-white flex flex-col h-screen  w-1/5 fixed left-0 top-0 p-6 transition-all duration-300'>
-        <div className='flex flex-col items-center mb-8'>
-          <img
-            className='rounded-full w-32 h-32 object-cover border-4 border-[#2c2f3f] mb-4 hover:border-[#149ddd] transition-all duration-300' 
-            src='/Profile.jpg'
-            alt='Profile'
-          />
-          <a href="#" className="text-center">
-            <h1 className="font-bold text-2xl mb-1">Gnana Prakash G</h1>
-            <p className="text-gray-400 text-sm">Code & Cloud</p>
+    <section
+      className={`
+        bg-[#040b14] text-white flex flex-col h-screen p-6 transition-all duration-300
+        ${isMobile
+          ? "fixed top-0 left-0 z-40 w-3/5"
+          : "fixed top-0 left-0 w-1/5 max-lg:hidden"
+        }
+      `}
+    >
+      <div className="flex flex-col items-center mb-8">
+        <img
+          className="rounded-full w-32 h-32 object-cover border-4 border-[#2c2f3f] mb-4 hover:border-[#149ddd] transition-all duration-300"
+          src="/Profile.jpg"
+          alt="Profile"
+        />
+        <a href="#" className="text-center" onClick={isMobile ? onCloseSidebar : undefined}>
+          <h1 className="font-bold text-2xl mb-1">Gnana Prakash G</h1>
+          <p className="text-gray-400 text-sm">Code & Cloud</p>
+        </a>
+
+        <div className="flex justify-center gap-4 mt-4">
+          <a href="https://github.com/GG-Prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300" onClick={isMobile ? onCloseSidebar : undefined}>
+            <BsGithub className="text-xl" />
           </a>
-
-          <div className="flex justify-center gap-4 mt-4">
-            <a href="https://github.com/GG-Prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <BsGithub className="text-xl" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaFacebook className="text-xl" /> 
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaInstagram className="text-xl" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaSkype className="text-xl" />
-            </a>
-            <a href="www.linkedin.com/in/gg-prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300">
-              <FaLinkedin className="text-xl" />
-            </a>
-          </div>
+          <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300" onClick={isMobile ? onCloseSidebar : undefined}>
+            <FaFacebook className="text-xl" />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300" onClick={isMobile ? onCloseSidebar : undefined}>
+            <FaInstagram className="text-xl" />
+          </a>
+          <a href="#" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300" onClick={isMobile ? onCloseSidebar : undefined}>
+            <FaSkype className="text-xl" />
+          </a>
+          <a href="https://www.linkedin.com/in/gg-prakash" className="text-gray-400 hover:text-[#149ddd] transition-colors duration-300" onClick={isMobile ? onCloseSidebar : undefined}>
+            <FaLinkedin className="text-xl" />
+          </a>
         </div>
-        <nav className="flex-1">
-          <ul className="space-y-2">
-            <li>
-              <a 
-                href="#hero" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcHome className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#about" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcAbout className='text-xl'/>
-                <span>About</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#education" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcDocument className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Education</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#experience" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcWorkflow className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Experience</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#projects" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcManager className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Projects</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
-              >
-                <FcContacts className='text-xl'/>
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </>
-  )
-}
+      </div>
 
-export default Sidebar
+      <nav className="flex-1">
+        <ul className="space-y-2">
+          {navLinks.map(({ href, icon, text }) => (
+            <li key={href}>
+              <a
+                href={href}
+                className={commonLinkClass}
+                onClick={isMobile ? onCloseSidebar : undefined}
+              >
+                {icon}
+                <span>{text}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </section>
+  );
+};
+
+export default Sidebar;
