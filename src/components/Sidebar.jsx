@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/bs'
 const Sidebar = () => {
   return (
     <>
-      <section className='bg-[#040b14] text-white flex flex-col h-screen w-1/5 fixed left-0 top-0 p-6 transition-all duration-300'>
+      <section className='bg-[#040b14] text-white flex flex-col h-screen  w-1/5 fixed left-0 top-0 p-6 transition-all duration-300'>
         <div className='flex flex-col items-center mb-8'>
           <img
             className='rounded-full w-32 h-32 object-cover border-4 border-[#2c2f3f] mb-4 hover:border-[#149ddd] transition-all duration-300' 
@@ -36,7 +36,6 @@ const Sidebar = () => {
             </a>
           </div>
         </div>
-
         <nav className="flex-1">
           <ul className="space-y-2">
             <li>
