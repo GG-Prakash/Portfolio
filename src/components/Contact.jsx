@@ -72,12 +72,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="contact" className="bg-white md:py-20">
+      <div className="max-w-6xl mx-auto md:px-6 px-4">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact</h2>
-          <p className="text-gray-500 text-lg">
+        <div className="text-center md:mb-16">
+          <h2 className=" text-gray-800 mb-4 title">Contact</h2>
+          <p className="text-gray-500 md:text-lg text-base ">
             Get in Touch — I’m Just a Message Away
           </p>
         </div>
@@ -95,12 +95,12 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="GitHub"
               >
-                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] md:w-16 w-12 md:h-16 h-12 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaGithub className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-semibold text-black">GitHub</span>
-                  <span className="text-sm text-gray-500">Connect on GitHub</span>
+                  <span className="md:text-base text-sm font-semibold  text-black">GitHub</span>
+                  <span className="md:text-sm text-xs text-gray-500">Connect on GitHub</span>
                 </div>
               </a>
               <a
@@ -110,12 +110,12 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="Twitter"
               >
-                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] md:w-16 w-12 md:h-16 h-12 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaTwitter className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-semibold text-black">Twitter</span>
-                  <span className="text-sm text-gray-500">Follow on Twitter</span>
+                  <span className="md:text-base text-sm font-semibold text-black">Twitter</span>
+                  <span className="md:text-sm text-xs text-gray-500">Follow on Twitter</span>
                 </div>
               </a>
               <a
@@ -125,12 +125,12 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="LinkedIn"
               >
-                <div className="flex items-center justify-center py-3 bg-white  rounded-lg  backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white  rounded-lg  backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] md:w-16 w-12 md:h-16 h-12 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaLinkedin className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-semibold text-black">LinkedIn</span>
-                  <span className="text-sm text-gray-500">Connect on LinkedIn</span>
+                  <span className="md:text-base text-sm font-semibold text-black">LinkedIn</span>
+                  <span className="md:text-sm text-xs text-gray-500">Connect on LinkedIn</span>
                 </div>
               </a>
               <a
@@ -140,12 +140,12 @@ const Contact = () => {
                 className="flex items-center space-x-4 group"
                 aria-label="Instagram"
               >
-                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] w-16 h-16 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
+                <div className="flex items-center justify-center py-3 bg-white backdrop-blur-md rounded-lg  shadow-[0_4px_6px_rgba(0,0,0,0.3)] md:w-16 w-12 md:h-16 h-12 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400 ">
                   <FaInstagram className="text-3xl text-indigo-600 group-hover:text-blue-400" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-semibold text-black">Instagram</span>
-                  <span className="text-sm text-gray-500">Follow on Instagram</span>
+                  <span className="md:text-base text-sm font-semibold text-black">Instagram</span>
+                  <span className="md:text-sm text-xs text-gray-500">Follow on Instagram</span>
                 </div>
               </a>
             </div>
@@ -157,7 +157,7 @@ const Contact = () => {
             <form
               ref={formRef}
               onSubmit={handleSend}
-              className="space-y-6 bg-white p-8 shadow-xl rounded-2xl"
+              className="space-y-6 bg-white md:p-8 px-6 py-3 shadow-xl rounded-2xl"
             >
               {errMsg && (
                 <p className="text-center text-red-600 font-semibold">{errMsg}</p>
@@ -244,7 +244,7 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+                  className="inline-block bg-indigo-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
                 >
                   Send Message
                 </button>
