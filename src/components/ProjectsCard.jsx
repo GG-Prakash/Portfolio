@@ -5,7 +5,7 @@ import { FaGlobe } from 'react-icons/fa';
 const ProjectsCard = ({ title, des, src, projLink, gitLink, tools }) => {
   return (
     <div className="w-full p-4 xl:px-6 h-auto xl:py-8 rounded-xl flex flex-col bg-gray-100 shadow-md hover:shadow-lg transition-all duration-300">
-      <div className="w-full h-[200px] overflow-hidden rounded-lg group">
+      <div className="w-full md:h-[200px] h-[100px] overflow-hidden rounded-lg group">
         <img
           className="w-full h-full object-cover rounded-lg group-hover:scale-105 duration-300 cursor-pointer"
           src={src}
@@ -14,11 +14,11 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink, tools }) => {
       </div>
 
       <div className="w-full mt-5 flex flex-col gap-4">
-        <div className="flex items-center justify-between">
-          <h3 className="text-base xl:text-lg font-semibold text-gray-800">
+        <div className="flex  items-center justify-between">
+          <h3 className="md:text-base text-sm xl:text-lg font-semibold text-gray-800">
             {title}
           </h3>
-          <div className="flex gap-3">
+          <div className="flex gap-3 max-md:-ml-3">
             {gitLink && (
               <a
                 href={gitLink}
@@ -26,7 +26,7 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink, tools }) => {
                 rel="noopener noreferrer"
                 title="GitHub Repository"
               >
-                <span className="text-lg w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-blue-400 transition-all duration-300 bg-gray-100 text-blue-800">
+                <span className="md:text-lg text-xs w-9 h-9 rounded-full inline-flex justify-center items-center hover:text-blue-400 transition-all duration-300 bg-gray-100 text-blue-800">
                   <BsGithub />
                 </span>
               </a>
