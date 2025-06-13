@@ -10,10 +10,10 @@ const Card = ({ title, des, logo }) => {
                         <img src={logo} alt="logo" />
                     </div>
                     <div className="flex flex-col gap-6">
-                        <h2 className={`text-xl md:text-xl font-titleFont font-bold text-black`}>
+                        <h2 className={`text-lg md:text-xl font-titleFont font-bold text-black`}>
                             {title}
                         </h2>
-                        <p className={`text-base font-semibold truncated text-black/80`}>
+                        <p className={`text-base md:font-semibold truncated text-black/80`}>
                             {des}
                         </p>
                         <span className="text-2xl text-[#61c3f1] opacity-0 group-hover:opacity-100 ">
