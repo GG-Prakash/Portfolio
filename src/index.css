@@ -16,6 +16,9 @@ body{
 .clr{
     @apply bg-blue-400;
 }
+.logos{
+    @apply group-hover:text-blue-400 text-indigo-600 w-8 h-8 max-md:w-6 max-md:h-6
+}
 .underline{
     text-decoration: underline;
     text-decoration-color: rgb(49, 190, 255);

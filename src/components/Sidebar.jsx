@@ -23,7 +23,7 @@ const Sidebar = ({ isMobile = false, onCloseSidebar = () => {} }) => {
   return (
     <section
       className={`
-        bg-[#040b14] text-white flex flex-col h-screen p-6 transition-all duration-300
+        bg-[#040b14] z-50 text-white flex flex-col h-screen p-6 transition-all duration-300
         ${isMobile
           ? "fixed top-0 left-0 z-40 w-3/5"
           : "fixed top-0 left-0 w-1/5 max-lg:hidden"
