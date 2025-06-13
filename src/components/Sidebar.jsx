@@ -58,11 +58,11 @@ const Sidebar = () => {
             </li>
             <li>
               <a 
-                href="#skills" 
+                href="#education" 
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
               >
                 <FcDocument className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Skills</span>
+                <span>Education</span>
               </a>
             </li>
             <li>
@@ -76,11 +76,11 @@ const Sidebar = () => {
             </li>
             <li>
               <a 
-                href="#portfolio" 
+                href="#projects" 
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-[#2c2f3f] hover:text-[#149ddd] transition-all duration-300 group"
               >
                 <FcManager className='text-xl text-gray-400 group-hover:text-[#149ddd]'/>
-                <span>Portfolio</span>
+                <span>Projects</span>
               </a>
             </li>
             <li>
