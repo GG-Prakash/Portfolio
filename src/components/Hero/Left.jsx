@@ -17,7 +17,7 @@ const Left = () => {
         { icon: <SiJenkins  className='logos' />, }
     ]
     return (
-        <div className='flex flex-col '>
+        <div className='flex flex-col  '>
             <div className="ml-3 px-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Left = () => {
                 </p>
             </div>
             <div className='flex max-md:flex-col gap-4 p-8 '>
-                <h5 className='text-gray-900  text-xl md:text-3xl md:hidden'>Links</h5>
+                <h5 className='text-gray-900  text-xl md:text-3xl md:hidden'>FIND ME IN</h5>
                 <div className="flex md:flex-col gap-6 md:gap-8 ">
                     <div className="flex flex-col items-center py-3 bg-white rounded-lg 
                backdrop-blur-md shadow-[0_4px_6px_rgba(0,0,0,0.3)] md:w-14 md:h-14 w-10 h-10 transition-all duration-300 ease-in-out transform group hover:shadow-[0_8px_16px_rgba(96,165,250,0.9)] hover:-translate-y-1.5 hover:border-blue-400"
@@ -58,7 +58,7 @@ const Left = () => {
                     </div>
                 </div>
                 <div className="hidden md:block w-0.5 bg-gradient-to-b from-transparent via-gray-600/50 to-transparent mx-6 "></div>
-                <h5 className='text-gray-900  text-xl md:text-3xl md:hidden'>Skill</h5>
+                <h5 className='text-gray-900  text-xl md:text-3xl md:hidden'>BEST SKILLS ON</h5>
                 <div className="grid grid-cols-5 gap-6 md:gap-8">
                     {skills.map((skill, index) => (
                         <div
