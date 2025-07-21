@@ -6,7 +6,7 @@ import Left from './Left'
 const Hero = () => {
   
   return (
-    <section id="hero" className=" text-white  min-h-screen flex  items-center justify-between relative">
+    <section id="hero" className="text-white  min-h-screen flex  items-center justify-between relative">
       
       <div> <Left /></div>
       <div><motion.img 
