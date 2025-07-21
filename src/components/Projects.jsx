@@ -7,6 +7,7 @@ const projects = [
     des: 'Deployed secure 3-tier AWS app using VPCs, ALBs, RDS, and ACM for scalable and isolated routing.',
     src: '/projects/shopsite.png',
     projLink: 'https://natarajanandco.com/',
+    gitLink: 'https://github.com/Kabileshwaran183/P15-Ecommerce-site',
     tools: ['EC2',' RDS', 'ALB',' VPC', 'R53', 'ACM']
   },
   {
