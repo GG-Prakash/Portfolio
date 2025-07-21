@@ -13,7 +13,7 @@ const Education = () => {
                 <div className="mt-2 lgl:mt-8 w-full  flex max-md:flex-col max-md:gap-8" 
                      style={{ 
                         backgroundImage: 'linear-gradient(to bottom, #808080, transparent)',
-                        backgroundSize: '6px 60%',
+                        backgroundSize: '6px ',
                         backgroundRepeat: 'no-repeat',
                         paddingLeft: '6px'
                      }}>

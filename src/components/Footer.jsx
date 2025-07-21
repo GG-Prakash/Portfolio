@@ -17,73 +17,72 @@ const Footer = () => {
 
   return (
     <footer className="relative pt-8  border-gray-200">
-      
-        <div className='bg-blue-100/30 py-5 px-40' >
-        <div className='bg-blue-100 p-10 rounded-4xl backdrop-blur-xl shadow-[0_4px_6px_rgba(0,0,0,0.3)] '>
-          <h2 className="text-3xl text-gray-900 pb-4">Personal Info</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              
-              <div>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Degree:</strong>
-                      <span className="text-gray-600  ml-2">Bachelor Of Engineering</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Residency:</strong>
-                      <span className="text-gray-600 ml-2">Chennai, India</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Age:</strong>
-                      <span className="text-gray-600  ml-2">21</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
 
-              <div>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Email:</strong>
-                      <span className="text-gray-600  ml-2">mailofggprakash@gmail.com</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Phone:</strong>
-                      <span className="text-gray-600  ml-2">+91 93847 07189</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">→</span>
-                    <div>
-                      <strong className="text-gray-700 ">Freelance:</strong>
-                      <span className="text-gray-600  ml-2">Available</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+      <div className='bg-blue-100/30 py-5 md:px-40 px-2' >
+        <div className='bg-orange-100/10 md:p-10 p-4 px-10 md:rounded-4xl backdrop-blur-xl shadow-[0_4px_6px_rgba(0,0,0,0.3)] '>
+          <h2 className="md:text-3xl text-xl max-md:text-center font-semibold text-gray-900 md:pb-4 pb-6">Personal Information</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Degree:</strong>
+                    <span className="text-gray-600  ml-2">Bachelor Of Engineering</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Residency:</strong>
+                    <span className="text-gray-600 ml-2">Chennai, India</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Age:</strong>
+                    <span className="text-gray-600  ml-2">21</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Email:</strong>
+                    <span className="text-gray-600  ml-2">mailofggprakash@gmail.com</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Phone:</strong>
+                    <span className="text-gray-600  ml-2">+91 93847 07189</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-500 mr-2">→</span>
+                  <div>
+                    <strong className="text-gray-700 ">Freelance:</strong>
+                    <span className="text-gray-600  ml-2">Available</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-          <div className='bg-indigo-400 py-5 text-center'>
-              <p className="text-gray-600 text-sm">
-                        © <span>{new Date().getFullYear()}</span>{' '}
-                        <strong className="font-semibold">GnanaPrakash</strong> All Rights Reserved
-                      </p>
-          </div>
-        
+      </div>
+      <div className='md:bg-indigo-400 bg-gray-900 py-5 text-center'>
+        <p className="text-sm max-md:text-white">
+          © <span>{new Date().getFullYear()}</span>{' '}
+          <strong className="font-semibold">GnanaPrakash</strong> All Rights Reserved
+        </p>
+      </div>
+
       {/* Resume Popup Button */}
       <button
         onClick={toggleResume}

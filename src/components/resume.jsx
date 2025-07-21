@@ -5,7 +5,7 @@ import { FcDocument } from 'react-icons/fc'
 const Skills = () => {
   
   return (
-    <section id="skills" className="section mt-2 mb-15">
+    <section  className="section mt-2 mb-15">
 
       <h2 className="title  ">Resume</h2>
 

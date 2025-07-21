@@ -4,7 +4,7 @@ body{
     font-family: "Bodoni Moda", serif;
 }
 .title{
-    @apply text-4xl font-bold text-gray-800 w-full mb-4;
+    @apply md:text-4xl text-3xl font-bold text-gray-800 w-full mb-4;
 }
 .section{
     @apply w-full  pb-10 px-4 bg-white scroll-mt-[100px];
@@ -15,6 +15,9 @@ body{
 
 .clr{
     @apply bg-blue-400;
+}
+.logos{
+    @apply group-hover:text-blue-400 text-indigo-600 w-8 h-8 max-md:w-6 max-md:h-6
 }
 .underline{
     text-decoration: underline;

@@ -53,10 +53,10 @@ const Projects = () => {
 
     <section id="projects" className="w-full py-20 px-5 border-b-[1px] border-gray-200 scroll-mt-[100px]">
       <div className="flex justify-center items-center text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 title">Projects</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-14 mt-10">
         {projects.map((project, index) => (
           <ProjectsCard
             key={index}
