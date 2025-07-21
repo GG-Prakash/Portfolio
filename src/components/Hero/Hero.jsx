@@ -10,8 +10,8 @@ const Hero = () => {
     <section id="hero" className=" text-white    min-h-screen flex max-md:flex-col items-center justify-between relative">
 
       
-      <div className=' max-md:bg-slate-400/10 max-md:w-screen w-[85%] md:py-10 pt-28 pb-6 md:my-44  '><Left /></div>
-      <div><motion.img 
+      <div className=' max-md:bg-slate-400/10 max-md:w-screen w-[85%] md:py-10 pt-28 pb-6 md:my-44 '><Left /></div>
+      <div ><motion.img 
               src="/profile normal.png"
               alt="Profile" 
               initial={{ opacity: 0 }}
