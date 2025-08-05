@@ -7,7 +7,7 @@ const ProjectsCard = ({ title, des, src, projLink, gitLink, tools }) => {
     <div className="w-full p-4 xl:px-6 h-auto xl:py-8 rounded-xl flex flex-col bg-gray-100 shadow-md hover:shadow-lg transition-all duration-300">
       <div className="w-full md:h-[200px] h-[100px] overflow-hidden rounded-lg group">
         <img
-          className="w-full h-full object-cover rounded-lg group-hover:scale-105 duration-300 cursor-pointer"
+          className="w-full h-full object-cover rounded-lg "
           src={src}
           alt={title}
         />
