@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section  className="section mt-2 mb-15">
 
-      <h2 className="title  ">Resume</h2>
+      <h2 className="title  "></h2>
 
 <div className="w-full md:w-2/6  items-start gap-8">
           <div>
