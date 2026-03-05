@@ -8,7 +8,7 @@ const projects = [
     src: '/projects/shopsite.png',
     projLink: 'https://natarajanandco.com/',
     gitLink: 'https://github.com/Kabileshwaran183/P15-Ecommerce-site',
-    tools: ['EC2',' RDS', 'ALB',' VPC', 'R53', 'ACM']
+    tools: ['EC2', ' RDS', 'ALB', ' VPC', 'R53', 'ACM']
   },
   {
     title: 'CI/CD Pipeline Automation using Jenkins & Kubernetes',
@@ -16,7 +16,7 @@ const projects = [
     src: 'public/projects/DevOps architecture.png',
     projLink: 'public/live/Devops project.drawio (1).svg',
     gitLink: 'https://github.com/GG-Prakash/Projects',
-    tools: ['Jenkins',' GitHub',' Docker', 'SonarQube', 'Trivy', 'EC2', 'ECR', 'Kops', 'Kubernetes']
+    tools: ['Jenkins', ' GitHub', ' Docker', 'SonarQube', 'Trivy', 'EC2', 'ECR', 'Kops', 'Kubernetes']
   },
   {
     title: 'Multi-Branch DevOps Infrastructure with Terraform & Jenkins',
@@ -24,31 +24,37 @@ const projects = [
     src: '/projects/Recipeapp.png',
     projLink: 'https://p5-recipe-app.netlify.app/',
     gitLink: 'https://github.com/Kabileshwaran183/P5-Recipe-App',
-    tools: ['VPC','EC2','Terraform','IAM','GitHub']
+    tools: ['VPC', 'EC2', 'Terraform', 'IAM', 'GitHub']
   }
 ];
 
 const Projects = () => {
   return (
+    <section id="projects" className="sectioneven relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-1/4 left-0 w-96 h-96 bg-cyan-900/20 rounded-full blur-[120px] -z-10"></div>
 
-    <section id="projects" className="w-full py-20 px-5 border-b-[1px] border-gray-200 scroll-mt-[100px]">
-      <div className="flex justify-center items-center text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 title">Projects</h2>
-      </div>
+      <div className="max-w-7xl mx-auto z-10 relative">
+        <div className="flex flex-col items-center mb-16 pt-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Featured Projects</h2>
+          <div className="w-24 h-1 bg-cyan-500 rounded-full mb-6 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
+          </div>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-14 mt-10">
-        {projects.map((project, index) => (
-          <ProjectsCard
-            key={index}
-            title={project.title}
-            des={project.des}
-            src={project.src}
-            projLink={project.projLink}
-            gitLink={project.gitLink}
-            tools={project.tools}
-          />
-        ))}
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectsCard
+              key={index}
+              title={project.title}
+              des={project.des}
+              src={project.src}
+              projLink={project.projLink}
+              gitLink={project.gitLink}
+              tools={project.tools}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -47,10 +47,10 @@ function App() {
       <button
         ref={buttonRef}
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md text-white bg-[#040b14] hover:bg-[#149ddd] transition-colors duration-300"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2.5 rounded-lg text-gray-300 bg-slate-900 border border-white/10 hover:bg-cyan-500/10 hover:text-cyan-400 hover:border-cyan-500/30 transition-all duration-300 shadow-lg backdrop-blur-md"
         aria-label="Toggle sidebar"
       >
-        <FaBars size={24} />
+        <FaBars size={22} />
       </button>
 
       {/* Sidebar for small screens (overlay) */}

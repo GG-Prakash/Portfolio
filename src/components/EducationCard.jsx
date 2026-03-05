@@ -2,36 +2,40 @@ import React from "react";
 
 const EducationCard = ({ title, subTitle, result, des }) => {
     return (
-        <div className="w-full md:h-[150px] xl:h-[200px] group flex">
-            {/* Timeline indicator */}
-            <div className="w-10 max-md:w-7 h-[4px] bg-blue-100/60 group-hover:bg-blue-400 mt-12 max-md:mt-6 relative">
-                <span className="absolute w-5 h-5 -top-[0.5rem] -left-2 flex justify-center items-center">
-                    <span className="absolute w-0 h-0 max-md:border-l-[5px] border-l-[9px] border-l-transparent border-r-[9px] max-md:border-r-[5px] border-r-transparent border-t-[18px] max-md:border-t-[10px] border-t-gray-300 group-hover:border-t-blue-400 transform -rotate-[-90deg] duration-300"></span>
-                </span>
+        <div className="w-full flex group relative mt-8 first:mt-0">
+            {/* Timeline Line (for larger screens) */}
+            <div className="hidden md:flex flex-col items-center mr-8">
+                <div className="w-4 h-4 rounded-full border-4 border-slate-900 bg-cyan-500 group-hover:bg-indigo-400 group-hover:shadow-[0_0_15px_rgba(6,182,212,0.6)] transition-all duration-300 relative z-10"></div>
+                <div className="w-0.5 h-full bg-gradient-to-b from-cyan-500/50 to-transparent -mt-2 group-last:hidden"></div>
             </div>
 
-            {/* Card content */}
-            <div className="w-full max-md:px-8 bg-blue-100/60 shadow-xl hover:shadow-lg duration-300 rounded-lg md:px-4 lgl:px-10 xl:py-7 md:py-1 py-2 flex flex-col justify-center max-md:items-start md:gap-5 lgl:gap-6">
-                <div className="flex flex-row justify-between w-full">
-                    <div className="flex flex-col">
-                        <h3 className="text-xl md:text-[14px] xl:text-xl max-md:text-[12px] z-10 font-semibold leading-tight duration-300 text-gray-800 group-hover:text-gray-900">
-                             {title}
+            {/* Mobile Timeline indicator */}
+            <div className="md:hidden w-8 h-[2px] bg-cyan-500/50 group-hover:bg-cyan-400 mt-6 relative shrink-0">
+                <div className="absolute w-2 h-2 rounded-full bg-cyan-500 -left-1 -top-[3px]"></div>
+            </div>
+
+            {/* Card Content */}
+            <div className="flex-1 glass-card p-6 md:p-8 rounded-2xl group-hover:-translate-y-2 transition-transform duration-300">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
+                    <div>
+                        <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                            {title}
                         </h3>
-                        <p className="text-sm md:text-[11px] xl:text-sm max-md:text-[9px] mt-2 duration-300 text-gray-800 group-hover:text-gray-900">
+                        <p className="text-sm md:text-base text-gray-400 mt-1">
                             {subTitle}
                         </p>
                     </div>
-                    <div>
-                        <p className="md:px-2 md:py-1 max-md:px-1 xl:px-3 xl:py-2 text-sm md:text-[10px] xl:text-sm max-md:text-[8px]  group-hover:text-blue-600 bg-gray-100 group-hover:border-[0.5px]  max-md:rounded-sm rounded-lg flex justify-center items-center font-medium">
+                    <div className="shrink-0">
+                        <span className="inline-block px-4 py-1.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full text-sm font-semibold shadow-[0_0_10px_rgba(6,182,212,0.1)]">
                             {result}
-                        </p>
+                        </span>
                     </div>
                 </div>
-                <div>
-                    <p className="text-sm md:text-[11px] max-md:text-[9px] xl:text-sm duration-300 leading-tight text-gray-600 group-hover:text-gray-700">
+                {des && (
+                    <p className="text-sm md:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4 mt-2">
                         {des}
                     </p>
-                </div>
+                )}
             </div>
         </div>
     );

@@ -3,23 +3,21 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Card = ({ title, des, logo }) => {
     return (
-        <div className={`w-full px-3 py-3 bg-white  h-80 rounded-2xl flex items-center group `}>
-            <div className="h-auto overflow-y-hidden">
-                <div className="flex h-full flex-col gap-5">
-                    <div className="w-16 flex flex-col justify-between">
-                        <img src={logo} alt="logo" />
-                    </div>
-                    <div className="flex flex-col gap-6">
-                        <h2 className={`text-lg md:text-xl font-titleFont font-bold text-black`}>
-                            {title}
-                        </h2>
-                        <p className={`text-base md:font-semibold truncated text-black/80`}>
-                            {des}
-                        </p>
-                        <span className="text-2xl text-[#61c3f1] opacity-0 group-hover:opacity-100 ">
-                            <HiArrowRight />
-                        </span>
-                    </div>
+        <div className="w-full p-6 glass-card rounded-2xl flex flex-col group relative overflow-hidden h-full">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+
+            <div className="flex flex-col gap-6 h-full">
+                <div className="w-16 h-16 rounded-xl bg-white/5 p-2 flex items-center justify-center border border-white/10 group-hover:border-cyan-500/30 transition-colors">
+                    <img src={logo} alt="logo" className="max-w-full max-h-full object-contain" />
+                </div>
+
+                <div className="flex flex-col gap-3 flex-grow">
+                    <h2 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                        {title}
+                    </h2>
+                    <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        {des}
+                    </p>
                 </div>
             </div>
         </div>
