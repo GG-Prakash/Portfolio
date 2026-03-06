@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowUp, FaGithub, FaTwitter, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { HiDocumentText } from 'react-icons/hi';
+import { motion, AnimatePresence } from 'framer-motion';
 import Skills from './resume';
 import { FcDocument } from 'react-icons/fc';
 
@@ -75,22 +77,77 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-slate-950 py-6 border-t border-gray-800 text-center">
+      <div className="bg-slate-950 glass-panel py-6 border-t border-gray-800 text-center">
         <p className="text-sm text-gray-500">
           © {new Date().getFullYear()} <strong className="font-semibold text-gray-300">Gnana Prakash G</strong>. All Rights Reserved.
         </p>
       </div>
 
-      {/* Resume Popup Button */}
-      <button
-        onClick={toggleResume}
-        className="fixed bottom-20 right-6 z-50 bg-cyan-600 hover:bg-cyan-500 text-white p-3 rounded-full shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all duration-300 hover:-translate-y-1"
-        aria-label="Show Resume"
-      >
-        <div className="bg-white rounded overflow-hidden p-0.5">
-          <FcDocument className="text-2xl" />
-        </div>
-      </button>
+      <motion.button
+  onClick={toggleResume}
+  initial="initial"
+  animate="initial"
+  whileHover="hover"
+  variants={{
+    initial: {
+      width: 56,
+      transition: { duration: 0.5, ease: "easeInOut" }
+    },
+    hover: {
+      width: 135,
+      transition: { duration: 0.6, ease: "easeInOut" }
+    }
+  }}
+  className="fixed bottom-24 right-6 z-50 flex items-center bg-white/5 backdrop-blur-xl border border-white/10 text-white rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:border-cyan-500/50 overflow-hidden h-14"
+>
+  <div className="flex items-center px-4 relative">
+
+    {/* ICON */}
+    <motion.div
+      variants={{
+        initial: { rotate: 0 },
+        hover: { rotate: -360 }
+      }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      className="flex items-center justify-center z-20"
+    >
+      <HiDocumentText className="text-2xl text-cyan-400" />
+    </motion.div>
+
+    {/* TEXT */}
+    <div className="flex ml-2 overflow-hidden relative z-10">
+      {"Resume".split("").map((letter, index, array) => {
+        const reverseIndex = array.length - 1 - index
+
+        return (
+          <motion.span
+            key={index}
+            variants={{
+              initial: {
+                x: -20,
+                opacity: 0
+              },
+              hover: {
+                x: 0,
+                opacity: 1
+              }
+            }}
+            transition={{
+              duration: 0.3,
+              ease: "easeOut",
+              delay: reverseIndex * 0.08
+            }}
+            style={{ display: "inline-block" }}
+            className="font-bold tracking-tight text-sm md:text-base"
+          >
+            {letter}
+          </motion.span>
+        )
+      })}
+    </div>
+
+  </div>
+</motion.button>
 
       {/* Scroll to Top Button */}
       <button

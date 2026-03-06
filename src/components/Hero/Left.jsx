@@ -14,7 +14,7 @@ const Left = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}>
                 <h3 className=' -ml-1 text-xl md:text-2xl font-medium px-1 text-cyan-400/80 mb-2 uppercase italic tracking-wide'>Hi, i'm</h3>
                 <h2 className="-ml-2 text-5xl md:text-7xl lg:text-[4.5rem] text-white font-bold tracking-tight mb-6 drop-shadow-lg leading-tight">
-                    Gnana Prakash <span className="text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">G</span>
+                    Gnana Prakash <span className="text-cyan-400 ]">G</span>
                 </h2>
                 <div className="text-xl md:text-4xl text-gray-300 font-light flex items-center h-12">
                     <span className="mr-3 text-white/50">a</span>
@@ -32,7 +32,7 @@ const Left = () => {
                         wrapper="span"
                         cursor={true}
                         repeat={Infinity}
-                        className="text-cyan-300 font-medium drop-shadow-[0_0_10px_rgba(34,211,238,0.4)]"
+                        className="text-cyan-300 font-medium]"
                     />
                 </div>
             </motion.div>

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaPaperPlane, FaTelegramPlane } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -88,70 +88,78 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side - Contact Info */}
-          <div className="flex flex-col justify-center space-y-8">
-            <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">Connect With Me</h3>
-            <p className="text-gray-400 leading-relaxed mb-8">
-              Whether you have a question, a project proposal, or just want to say hi, I'll try my best to get back to you!
-            </p>
+          <div className="flex flex-col space-y-10 mt-2 md:mt-6  h-full">
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-6">
               <a
                 href="https://github.com/GG-Prakash"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 flex flex-col items-center justify-center gap-4 group rounded-2xl"
+                className="flex items-center gap-5 group"
               >
-                <div className="w-14 h-14 rounded-full bg-slate-800/80 flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:scale-110 transition-all duration-300">
-                  <FaGithub className="text-3xl text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                <div className="glass-card w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all duration-300 shrink-0 shadow-lg">
+                  <FaGithub className="text-3xl text-gray-300 group-hover:text-cyan-400 transition-colors" />
                 </div>
-                <span className="font-semibold text-gray-300 group-hover:text-white transition-colors">GitHub</span>
+                <div className="flex flex-col text-left">
+                  <span className="font-bold text-gray-100 group-hover:text-white transition-colors text-lg">GitHub</span>
+                  <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors mt-0.5">Connect on GitHub</span>
+                </div>
               </a>
 
               <a
                 href="https://twitter.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 flex flex-col items-center justify-center gap-4 group rounded-2xl"
+                className="flex items-center gap-5 group"
               >
-                <div className="w-14 h-14 rounded-full bg-slate-800/80 flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:scale-110 transition-all duration-300">
-                  <FaTwitter className="text-3xl text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                <div className="glass-card w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all duration-300 shrink-0 shadow-lg">
+                  <FaTwitter className="text-3xl text-gray-300 group-hover:text-cyan-400 transition-colors" />
                 </div>
-                <span className="font-semibold text-gray-300 group-hover:text-white transition-colors">Twitter</span>
+                <div className="flex flex-col text-left">
+                  <span className="font-bold text-gray-100 group-hover:text-white transition-colors text-lg">Twitter</span>
+                  <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors mt-0.5">Follow on Twitter</span>
+                </div>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/gg-prakash"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 flex flex-col items-center justify-center gap-4 group rounded-2xl"
+                className="flex items-center gap-5 group"
               >
-                <div className="w-14 h-14 rounded-full bg-slate-800/80 flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:scale-110 transition-all duration-300">
-                  <FaLinkedin className="text-3xl text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                <div className="glass-card w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all duration-300 shrink-0 shadow-lg">
+                  <FaLinkedin className="text-3xl text-gray-300 group-hover:text-cyan-400 transition-colors" />
                 </div>
-                <span className="font-semibold text-gray-300 group-hover:text-white transition-colors">LinkedIn</span>
+                <div className="flex flex-col text-left">
+                  <span className="font-bold text-gray-100 group-hover:text-white transition-colors text-lg">LinkedIn</span>
+                  <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors mt-0.5">Connect on LinkedIn</span>
+                </div>
               </a>
 
               <a
                 href="mailto:mailofggprakash@gmail.com"
-                className="glass-card p-6 flex flex-col items-center justify-center gap-4 group rounded-2xl"
+                className="flex items-center gap-5 group"
               >
-                <div className="w-14 h-14 rounded-full bg-slate-800/80 flex items-center justify-center group-hover:bg-cyan-500/20 group-hover:scale-110 transition-all duration-300">
-                  <FaEnvelope className="text-3xl text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                <div className="glass-card w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all duration-300 shrink-0 shadow-lg">
+                  <FaEnvelope className="text-3xl text-gray-300 group-hover:text-cyan-400 transition-colors" />
                 </div>
-                <span className="font-semibold text-gray-300 group-hover:text-white transition-colors">Email</span>
+                <div className="flex flex-col text-left">
+                  <span className="font-bold text-gray-100 group-hover:text-white transition-colors text-lg">Email</span>
+                  <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors mt-0.5">Send a message</span>
+                </div>
               </a>
             </div>
           </div>
 
           {/* Right Side - Form */}
-          <div className="glass-panel p-8 md:p-10 rounded-3xl relative">
-            <h3 className="text-2xl font-bold text-white mb-8 tracking-wide">Send a Message</h3>
+          <div className="glass-panel p-6 md:p-8 rounded-3xl relative">
+            <h3 className="text-2xl font-bold text-white mb-6 tracking-wide">Send a Message</h3>
             <form
               ref={formRef}
               onSubmit={handleSend}
-              className="space-y-6"
+              className="space-y-4 md:space-y-5"
             >
               {errMsg && (
                 <div className="bg-red-500/10 border border-red-500/50 text-red-400 px-4 py-3 rounded-lg text-sm text-center">
@@ -163,7 +171,7 @@ const Contact = () => {
                   {successMsg}
                 </div>
               )}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
                 <div className="space-y-2">
                   <label htmlFor="from_name" className="text-sm font-medium text-gray-400 ml-1">Your Name</label>
                   <input
@@ -225,7 +233,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  rows="5"
+                  rows="4"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
@@ -234,12 +242,13 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="text-center mt-4">
+              <div className="text-center mt-6">
                 <button
                   type="submit"
-                  className="inline-block bg-cyan-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                  className="inline-flex items-center justify-center gap-3 bg-cyan-600 text-white text-sm md:text-base font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-cyan-500/40 w-full sm:w-auto"
                 >
-                  Send Message
+                  <FaTelegramPlane className="text-xl" />
+                  <span>Send Message</span>
                 </button>
               </div>
             </form>

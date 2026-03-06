@@ -8,17 +8,17 @@ import Footer from './Footer'
 import Education from './Education'
 const Right = () => {
   return (
-   <>
-   <section>
-   <Hero />
-   <About />
-   <Education />
-   <Experience />
-   <Projects />
-   <Contact />
-   <Footer />
-   </section>
-   </>
+    <>
+      <section>
+        <Hero />
+        <About />
+        <Education />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </section>
+    </>
   )
 }
 

@@ -11,10 +11,10 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto z-10 relative">
         <div className="flex flex-col items-center mb-16 pt-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight text-center">Professional Experience</h2>
-          <div className="w-24 h-1 bg-indigo-500 rounded-full mb-6 relative overflow-hidden">
+          <div className="w-24 h-1 bg-cyan-500 rounded-full mb-6 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
           </div>
-          <p className="md:text-lg text-base text-gray-400 text-center max-w-2xl">
+          <p className="md:text-lg text-base text-center max-w-2xl">
             Engineering student with AWS DevOps focus and strong interest in cloud technologies.
           </p>
         </div>
