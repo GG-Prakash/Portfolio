@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'CI/CD Pipeline Automation using Jenkins & Kubernetes',
     des: 'Automated CI/CD pipeline with Jenkins, Docker, and K8s, integrating code to deployment seamlessly.',
-    src: '/projects/Devops-architecture.png',
+    src: '/projects/DevOps-architecture.png',
     projLink: 'public/live/Devops project.drawio (1).svg',
     gitLink: 'https://github.com/GG-Prakash/Projects',
     tools: ['Jenkins', ' GitHub', ' Docker', 'SonarQube', 'Trivy', 'EC2', 'ECR', 'Kops', 'Kubernetes']
