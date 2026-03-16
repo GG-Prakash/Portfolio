@@ -84,70 +84,70 @@ const Footer = () => {
       </div>
 
       <motion.button
-  onClick={toggleResume}
-  initial="initial"
-  animate="initial"
-  whileHover="hover"
-  variants={{
-    initial: {
-      width: 56,
-      transition: { duration: 0.5, ease: "easeInOut" }
-    },
-    hover: {
-      width: 135,
-      transition: { duration: 0.6, ease: "easeInOut" }
-    }
-  }}
-  className="fixed bottom-24 right-6 z-50 flex items-center bg-white/5 backdrop-blur-xl border border-white/10 text-white rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:border-cyan-500/50 overflow-hidden h-14"
->
-  <div className="flex items-center px-4 relative">
+        onClick={toggleResume}
+        initial="initial"
+        animate="initial"
+        whileHover="hover"
+        variants={{
+          initial: {
+            width: 56,
+            transition: { duration: 0.5, ease: "easeInOut" }
+          },
+          hover: {
+            width: 135,
+            transition: { duration: 0.6, ease: "easeInOut" }
+          }
+        }}
+        className="fixed bottom-24 right-6 z-50 flex items-center bg-white/5 backdrop-blur-xl border border-white/10 text-white rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:border-cyan-500/50 overflow-hidden h-14"
+      >
+        <div className="flex items-center px-4 relative">
 
-    {/* ICON */}
-    <motion.div
-      variants={{
-        initial: { rotate: 0 },
-        hover: { rotate: -360 }
-      }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="flex items-center justify-center z-20"
-    >
-      <HiDocumentText className="text-2xl text-cyan-400" />
-    </motion.div>
-
-    {/* TEXT */}
-    <div className="flex ml-2 overflow-hidden relative z-10">
-      {"Resume".split("").map((letter, index, array) => {
-        const reverseIndex = array.length - 1 - index
-
-        return (
-          <motion.span
-            key={index}
+          {/* ICON */}
+          <motion.div
             variants={{
-              initial: {
-                x: -20,
-                opacity: 0
-              },
-              hover: {
-                x: 0,
-                opacity: 1
-              }
+              initial: { rotate: 0 },
+              hover: { rotate: -360 }
             }}
-            transition={{
-              duration: 0.3,
-              ease: "easeOut",
-              delay: reverseIndex * 0.08
-            }}
-            style={{ display: "inline-block" }}
-            className="font-bold tracking-tight text-sm md:text-base"
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="flex items-center justify-center z-20"
           >
-            {letter}
-          </motion.span>
-        )
-      })}
-    </div>
+            <HiDocumentText className="text-2xl text-cyan-400" />
+          </motion.div>
 
-  </div>
-</motion.button>
+          {/* TEXT */}
+          <div className="flex ml-2 overflow-hidden relative z-10">
+            {"Resume".split("").map((letter, index, array) => {
+              const reverseIndex = array.length - 1 - index
+
+              return (
+                <motion.span
+                  key={index}
+                  variants={{
+                    initial: {
+                      x: -20,
+                      opacity: 0
+                    },
+                    hover: {
+                      x: 0,
+                      opacity: 1
+                    }
+                  }}
+                  transition={{
+                    duration: 0.3,
+                    ease: "easeOut",
+                    delay: reverseIndex * 0.08
+                  }}
+                  style={{ display: "inline-block" }}
+                  className="font-bold tracking-tight text-sm md:text-base"
+                >
+                  {letter}
+                </motion.span>
+              )
+            })}
+          </div>
+
+        </div>
+      </motion.button>
 
       {/* Scroll to Top Button */}
       <button
@@ -159,28 +159,42 @@ const Footer = () => {
       </button>
 
       {/* Resume Modal */}
-      {showResume && (
-        <div
-          className="fixed inset-0 bg-slate-900/80 backdrop-blur-sm flex justify-center items-center z-[100]"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="resume-title"
-        >
-          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 relative m-4">
-            <button
-              onClick={toggleResume}
-              className="absolute top-4 right-4 text-gray-400 hover:text-slate-900 transition-colors w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100"
-              aria-label="Close Resume"
+      <AnimatePresence>
+        {showResume && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-slate-950/80 backdrop-blur-md flex justify-center items-center z-[100]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="resume-title"
+          >
+            <motion.div
+              initial={{ scale: 0.95, y: 20, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.95, y: 20, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="bg-slate-900/90 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-[0_0_50px_rgba(0,0,0,0.5)] max-w-4xl w-full relative m-4 overflow-hidden"
             >
-              &#x2715;
-            </button>
-            <div id="resume-title" className="text-2xl font-bold text-slate-800 mb-2 border-b pb-4">
-              Resume
-            </div>
-            <Skills />
-          </div>
-        </div>
-      )}
+              {/* Floating Close Button */}
+              <button
+                onClick={toggleResume}
+                className="absolute top-4 right-4 text-slate-400 hover:text-white transition-all duration-300 w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-rose-500/80 hover:shadow-lg hover:shadow-rose-500/20 z-50 backdrop-blur-md"
+                aria-label="Close Resume"
+              >
+                &#x2715;
+              </button>
+
+              {/* Modal Content */}
+              <div className="p-6 md:p-10 w-full relative z-10">
+                <Skills />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </footer>
   );
 };
